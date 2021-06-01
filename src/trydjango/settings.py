@@ -7,7 +7,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/2.0/topics/settings/
 
 For the full list of settings and their values, see
-https://docs.djangoproject.com/en/2.0/ref/settings/
+https:// docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
 
 #     own
-    'products',
+'products',
+'pages',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'trydjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ title|capfirst|upper }}</h1>
+<h1>this the contact page</h1>
+
+<p>{{my_text}},{{my_number}}</p>
+<ul>
+{% for sub_item in my_list %}
+<li>{{ sub_item }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
